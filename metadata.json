@@ -1,5 +1,5 @@
 {
-  "name": "Mestre da Energia - IFSC",
-  "description": "Simulador narrativo de carreira para o curso de Tecnologia em Sistemas de Energia do IFSC.",
+  "name": "PPC Interativo - Sistemas de Energia",
+  "description": "Plataforma interativa para visualização do Projeto Pedagógico de Curso de Sistemas de Energia, conectando estudantes e empresas através de competências e visualização de carreira.",
   "requestFramePermissions": []
 }

@@ -179,18 +179,18 @@ export default function App() {
       </div>
       <div className="space-y-4">
         <h1 className="text-5xl font-bold tracking-tighter text-white uppercase italic">
-          Mestre da Energia
+          PPC Interativo
         </h1>
         <p className="text-zinc-400 text-lg leading-relaxed">
-          Simulador narrativo de carreira para o curso de Tecnologia em Sistemas de Energia do <span className="text-emerald-400 font-semibold">IFSC</span>.
-          Guie um calouro através dos 6 períodos e salve uma indústria em Florianópolis da falência energética.
+          Transformando o <span className="text-emerald-400 font-semibold">Projeto Pedagógico de Curso</span> em uma experiência visual, interativa e orientada ao mercado.
+          Conecte disciplinas com aplicações práticas e demonstre seu valor para as empresas.
         </p>
       </div>
       <button 
         onClick={startGame}
         className="group relative px-8 py-4 bg-emerald-500 hover:bg-emerald-400 text-zinc-950 font-bold rounded-xl transition-all hover:scale-105 active:scale-95 flex items-center gap-2 mx-auto"
       >
-        INICIAR CARREIRA
+        EXPLORAR CURSO
         <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
       </button>
       <div className="pt-8 border-t border-zinc-800 flex justify-center gap-8 text-xs text-zinc-500 uppercase tracking-widest font-mono">
@@ -309,7 +309,40 @@ export default function App() {
         </div>
 
         {/* The Board Container */}
-        <div className="relative p-4 bg-[#3d2b1f] rounded-[4rem] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.7)] border-b-[12px] border-r-[12px] border-[#2a1d15]">
+        <div className="flex flex-col lg:flex-row gap-8 items-start">
+          {/* Phases Legend */}
+          <div className="w-full lg:w-64 space-y-4 shrink-0">
+            <div className="p-6 bg-zinc-900/80 border border-zinc-800 rounded-3xl space-y-4">
+              <h3 className="text-sm font-black text-white uppercase tracking-widest border-b border-zinc-800 pb-2">Jornada do Curso</h3>
+              <div className="space-y-3">
+                {[
+                  { phase: 1, label: "Base Técnica" },
+                  { phase: 2, label: "Fundamentos" },
+                  { phase: 3, label: "Aplicação Prática" },
+                  { phase: 4, label: "Sistemas & Eficiência" },
+                  { phase: 5, label: "Mercado & Gestão" },
+                  { phase: 6, label: "Consolidação" }
+                ].map((p) => (
+                  <div key={p.phase} className="flex items-center gap-3">
+                    <div className={`w-6 h-6 rounded-lg flex items-center justify-center text-[10px] font-black ${currentPeriodIndex >= (p.phase - 1) * 2 ? 'bg-emerald-500 text-zinc-950' : 'bg-zinc-800 text-zinc-600 border border-zinc-700'}`}>
+                      {p.phase}
+                    </div>
+                    <span className={`text-[10px] font-bold uppercase tracking-tight ${currentPeriodIndex >= (p.phase - 1) * 2 ? 'text-zinc-200' : 'text-zinc-500'}`}>
+                      {p.label}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            
+            <div className="p-6 bg-emerald-500/5 border border-emerald-500/10 rounded-3xl">
+              <p className="text-[10px] text-emerald-400 italic font-medium leading-relaxed">
+                "Traduzindo o conhecimento acadêmico em valor de mercado."
+              </p>
+            </div>
+          </div>
+
+          <div className="relative flex-1 p-4 bg-[#3d2b1f] rounded-[4rem] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.7)] border-b-[12px] border-r-[12px] border-[#2a1d15]">
           {/* Inner Frame (Metal) */}
           <div className="relative aspect-[16/10] bg-zinc-900 border-[12px] border-zinc-800 rounded-[3rem] overflow-hidden p-10 shadow-[inset_0_0_100px_rgba(0,0,0,0.9)]">
             {/* Board Texture */}
@@ -432,6 +465,7 @@ export default function App() {
                 </motion.div>
               );
             })}
+            </div>
           </div>
         </div>
       </div>
@@ -1241,8 +1275,8 @@ export default function App() {
         </h2>
         <p className="text-zinc-400 text-xl">
           {isGameWon 
-            ? "Parabéns, Tecnólogo! Você salvou a indústria da falência energética e se formou com honras no IFSC."
-            : "Infelizmente, suas decisões técnicas levaram a indústria a prejuízos insustentáveis. Hora de revisar a base!"}
+            ? "Parabéns! Você demonstrou domínio das competências do curso e está pronto para gerar valor real no mercado de energia."
+            : "Suas decisões técnicas ainda precisam de refinamento. Revise os fundamentos para garantir o sucesso no mercado!"}
         </p>
       </div>
 
@@ -1279,7 +1313,7 @@ export default function App() {
             <Zap className="w-6 h-6 text-zinc-950" />
           </div>
           <div>
-            <h1 className="font-bold tracking-tight text-white uppercase italic text-sm">Mestre da Energia</h1>
+            <h1 className="font-bold tracking-tight text-white uppercase italic text-sm">PPC Interativo</h1>
             <p className="text-[10px] text-zinc-500 font-mono tracking-widest uppercase">IFSC - Sistemas de Energia</p>
           </div>
         </div>
