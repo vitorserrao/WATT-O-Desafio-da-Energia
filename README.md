@@ -1,90 +1,135 @@
-# ⚡ PPC Interativo: Sistemas de Energia
+# ⚡ WATT-O-Desafio-da-Energia
 
-> **Transformando o ensino acadêmico em valor real para o mercado de energia.**
-
-![Status](https://img.shields.io/badge/Status-Em_Desenvolvimento-yellow)
-![Nível](https://img.shields.io/badge/Projeto-Extens%C3%A3o_I-blue)
-![Área](https://img.shields.io/badge/%C3%81rea-Sistemas_de_Energia-orange)
+### Plataforma Interativa Gamificada para Sistemas de Energia
 
 ---
 
 ## 📌 Sobre o Projeto
 
-Este projeto nasceu na disciplina de **Extensão I** com a missão de modernizar e democratizar o acesso ao **Projeto Pedagógico de Curso (PPC)** de Sistemas de Energia. 
+O **WATT-O-Desafio-da-Energia** é uma plataforma web interativa desenvolvida para transformar a **matriz curricular de Sistemas de Energia** em uma experiência dinâmica, visual e gamificada.
 
-O problema central identificado é a **lacuna de percepção**: empresas muitas vezes desconhecem a versatilidade e o potencial técnico do profissional de Sistemas de Energia, o que dificulta a conexão entre talentos e oportunidades.
-
-## 🎯 Objetivos Estratégicos
-
-A plataforma foi desenhada para atuar em três frentes principais:
-
-1.  **Clareza Acadêmica:** Tornar a jornada do aluno visual e compreensível, removendo a barreira de documentos técnicos estáticos.
-2.  **Vitrine de Competências:** Demonstrar para o mercado quais problemas reais o profissional é capaz de resolver.
-3.  **Ponte Mercado-Academia:** Conectar disciplinas teóricas com aplicações práticas e tecnologias de ponta.
+O projeto resolve um problema comum no meio acadêmico: a **estaticidade dos Projetos Pedagógicos de Curso (PPC)**, traduzindo competências técnicas em uma linguagem visual, interativa e conectada ao mercado de trabalho.
 
 ---
 
-## 🚀 A Solução: PPC Interativo
+## 🎯 Objetivo
 
-Diferente de um PDF tradicional, nossa plataforma oferece uma experiência dinâmica:
+Tornar o entendimento do curso mais claro, acessível e atrativo para:
 
-*   🗺️ **Linha do Tempo:** Visualização clara das 6 fases do curso.
-*   🛠️ **Tech Stack:** Mapeamento das ferramentas e tecnologias dominadas em cada etapa.
-*   🧠 **Matriz de Competências:** Tradução de disciplinas em habilidades práticas.
-*   🏢 **Foco em Soluções:** Destaque para os problemas de mercado que o profissional resolve.
+- 🎓 Estudantes
+- 🏫 Instituições de ensino
+- 🏢 Empresas do setor energético
 
----
+Respondendo diretamente à pergunta:
 
-## 🧩 Funcionalidades
-
-### 🎓 Para o Aluno
-*   **Navegação por Fases:** Entenda o fluxo do curso desde a base técnica até a consolidação.
-*   **Direcionamento de Carreira:** Veja onde cada matéria se encaixa no mundo real.
-*   **Identidade Profissional:** Construa sua percepção de valor desde o primeiro dia.
-
-### 🏢 Para Empresas
-*   **Mapeamento de Perfil:** Compreenda exatamente o que um Tecnólogo em Sistemas de Energia faz.
-*   **Acesso a Talentos:** Visualização de habilidades, áreas de interesse e tecnologias (Proposta de Banco de Talentos).
-*   **Redução de Gap:** Facilidade em identificar candidatos que dominam problemas específicos de eficiência e gestão energética.
+> **"Que problemas esse profissional resolve?"**
 
 ---
 
-## ⚙️ Estrutura do Curso (Flow)
+## 🚀 Funcionalidades
 
-O curso é estrategicamente organizado para uma evolução contínua:
+### 🎮 Jornada Gamificada
+- Tabuleiro interativo dividido em **6 fases**
+- Progressão baseada na evolução do usuário
 
-1.  **Fase 1: Base Técnica** (Cálculo, física e lógica fundamental).
-2.  **Fase 2: Fundamentos Elétricos** (Análise e circuitos).
-3.  **Fase 3: Aplicação Prática** (Programação, medição e instalações).
-4.  **Fase 4: Sistemas e Eficiência** (Foco em performance energética).
-5.  **Fase 5: Mercado e Gestão** (Comercialização e viabilidade econômica).
-6.  **Fase 6: Consolidação** (TCC e projetos finais integradores).
+### 🧠 Simulação de Carreira
+- Desafios com problemas reais do setor energético
+- Perguntas com explicações técnicas
+- Conexão entre teoria e prática
+
+### 🗺️ Visualização da Jornada
+- Fluxo de aprendizagem organizado:
+  
+  `Base Técnica → Fundamentos → Gestão → Consolidação`
+
+### 📊 Sistema de Pontuação
+- Feedback imediato
+- Mecânica de acertos e erros
+- Aprendizado ativo
+
+### 💼 Foco no Mercado
+- Tradução de disciplinas em aplicações reais
+- Conexão com tecnologias do setor energético
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Tecnologias
 
-O projeto utiliza um ecossistema moderno para garantir escalabilidade e interatividade:
+### ⚙️ Frontend
+- **TypeScript**
+- **React**
+- **Vite**
 
-*   🌐 **Frontend:** React / Vite (Alta performance e interatividade)
-*   🎨 **Design:** Figma (Prototipação de UI/UX)
-*   📊 **Estrutura:** Notion (Organização de conteúdo interativo)
-*   📈 **Backend/Dados:** Firebase ou Google Sheets (Gestão do Banco de Talentos)
+### 🎨 UI / Estilização
+- **Tailwind CSS**
+- **Lucide React**
+
+### ✨ Animações
+- **Framer Motion**
 
 ---
 
-## 👤 Autor
+## 🧱 Arquitetura
+
+Estrutura baseada em **componentização modular**:
+
+### 📌 Conceitos aplicados:
+- Separação entre dados e interface
+- Organização escalável
+- Manutenção facilitada
+
+---
+
+## 🧩 Base de Dados dos Desafios
+
+Arquivo responsável:
+
+Contém:
+- Perguntas
+- Alternativas
+- Respostas corretas
+- Explicações técnicas
+
+---
+
+## 📷 Demonstração
+
+🔗 Acesse o projeto:  
+https://ppc-interativo-stse.vercel.app/
+
+---
+
+## 💡 Diferencial
+
+Este projeto vai além de uma interface:
+
+- 📚 Traduz conteúdo acadêmico em experiência interativa
+- 🔗 Conecta formação acadêmica com o mercado
+- 🎮 Utiliza gamificação com propósito educacional
+- 🧠 Aplica conceitos de UX na educação
+
+---
+
+## 🔮 Próximas Evoluções
+
+- 🔐 Autenticação de usuários
+- 📊 Dashboard de desempenho
+- 🌐 Integração com backend
+- 🧠 Trilhas personalizadas
+- 🏢 Versão corporativa para recrutamento
+
+---
+
+## 👨‍💻 Autor
 
 **Vitor Serrão**  
-*Estudante de Sistemas de Energia*  
-[LinkedIn](https://www.linkedin.com/in/vitorwss) | [GitHub](https://github.com/vitorwss)  
-*Disciplina: Extensão I*
+Full Stack Developer  
+.NET | React | PostgreSQL
 
 ---
 
-## 📈 Visão de Futuro
+## 📄 Licença
 
-O PPC Interativo não é apenas um projeto escolar, mas a semente de uma **Plataforma Institucional de Empregabilidade**, conectando de forma definitiva a academia com o setor energético brasileiro.
+Este projeto está sob a licença MIT.
 
 ---
-© 2024 - Desenvolvido com foco em inovação energética.
